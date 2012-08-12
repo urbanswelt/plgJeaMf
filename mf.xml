@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<install version="2.5" type="plugin" group="jea">
+	<name>JEA - Custom Fields</name>
+	<author>Lars Urban</author>
+	<creationDate>August 2012</creationDate>
+	<copyright>Copyright (C) 2012 Lars Urban.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>webmaster@urbanswelt.de</authorEmail>
+	<authorUrl>www.urbanswelt.de</authorUrl>
+	<version>1.0</version>
+	<description>More Custom Fields for JEA.</description>
+	
+	<scriptfile>script.php</scriptfile>
+	
+	<files>
+		<filename plugin="mf">mf.php</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.plg_jea_mf.ini</language>
+		<language tag="de-DE">de-DE.plg_jea_mf.ini</language>
+	</languages>
+	
+	<params/>
+</install>
