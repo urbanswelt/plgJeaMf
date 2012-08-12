@@ -16,7 +16,7 @@
 		<filename plugin="mf">mf.php</filename>
 	</files>
 	
-	<languages>
+	<languages folder="languages">
 		<language tag="en-GB">en-GB.plg_jea_mf.ini</language>
 		<language tag="de-DE">de-DE.plg_jea_mf.ini</language>
 	</languages>
