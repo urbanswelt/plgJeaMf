@@ -20,6 +20,40 @@
 		<language tag="en-GB">en-GB.plg_jea_mf.ini</language>
 		<language tag="de-DE">de-DE.plg_jea_mf.ini</language>
 	</languages>
-	
-	<params/>
+<config>
+		<fields name="params">
+		    <fieldset name="basic">
+	            <field type="spacer" label="&lt;b&gt;Show Global field:&lt;/b&gt;" />
+				<field name="language" type="list" default="1" label="language" description="language">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="slogan" type="list" default="1" label="slogan" description="slogan_id">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				
+	            <field type="spacer" label="&lt;b&gt;Show Custom field:&lt;/b&gt;" />
+				<field name="field1" type="list" default="0" label="field1" description="mf_field1">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="field2" type="list" default="0" label="field2" description="mf_field2">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>				
+		    </fieldset>
+	  </fields>
+	</config>
+	<!-- joomla 1.5 -->
+    <params>
+        <param type="spacer" default="&lt;b&gt;Global:&lt;/b&gt;" />
+        <param name="field1" type="list" default="1" label="field1" description="mf_field1">
+            <option value="0">Below Content</option>
+            <option value="1">Above Content</option>
+            <option value="2">Both</option>
+        </param>       
+    </params>   
+    
+
 </install>

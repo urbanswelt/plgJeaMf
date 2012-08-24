@@ -41,6 +41,10 @@ class plgJeaMf extends JPlugin
     {
         parent::__construct( $subject, $params );
 		$this->loadLanguage();
+		// load plugin parameters
+		$this->_params = new JRegistry($params['params']);
+		$this->_slogan = ($this->_params->get('slogan'));
+		$this->_language = ($this->_params->get('language'));
     }
 
 
@@ -84,10 +88,11 @@ class plgJeaMf extends JPlugin
      * @param JForm $form
      * @return void
      */
-    function onAfterLoadPropertyForm(&$form)
+    public function onAfterLoadPropertyForm(&$form)
     {
-
-    }
+		if($this->_slogan == 0) $form->removeField ('slogan_id') ;
+		if($this->_language == 0) $form->removeField ('language') ;
+	}
 
     /**
      * onAfterStartPanels method (Called in the admin property form)
